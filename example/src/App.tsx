@@ -1,12 +1,12 @@
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-cpp-turbo';
+import { getObjectFromCpp } from 'react-native-cpp-turbo';
 
-const result = multiply(3, 7);
+console.log(getObjectFromCpp());
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Result: ...</Text>
     </View>
   );
 }
